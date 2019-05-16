@@ -1,0 +1,37 @@
+public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Please enter the begining of the interval:");
+
+        int A = sc.nextInt();
+
+        System.out.println("Please enter the end of the interval:");
+
+        int B = sc.nextInt();
+
+        int SUM = 0;
+
+        for (int i = A; ((i * i) <= B) ; i++) {
+
+            if (i % 3 == 0) {
+
+                System.out.print("Skip " + i + ", ");
+
+            } else {
+
+                SUM += (i * i);
+
+                if (SUM <= 200) {
+
+                    System.out.print(i * i + ", ");
+
+                } else {
+
+                    break;
+
+                }
+            }
+        }
+    }
+}
