@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Homework01Task03 {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Please enter A:");
+
+        int A = sc.nextInt();
+
+        System.out.println("Please enter B:");
+
+        int B = sc.nextInt();
+
+        int C = A;
+
+        A = B;
+
+        B = C;
+
+        System.out.println("Switched numbers are A = " + A + " and B = " + B);
+    }
+}
