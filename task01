@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+public class Homework01Task01 {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Please input A:");
+
+        double A = sc.nextDouble();
+
+        System.out.println("Please input B:");
+
+        double B = sc.nextDouble();
+
+        System.out.println("Please input C:");
+
+        double C = sc.nextDouble();
+
+        if (A > B) {
+
+            if ((A > C) && (C > B)) {
+
+                System.out.println("The number " + C + " is between the numbers " + B + " and " + A);
+
+            } else {
+
+                System.out.println("The number " + C + " is not between the numbers " + B + " and " + A);
+
+            }
+
+        } else {
+
+            if (A < B) {
+
+                if ((B > C) && (C > A)) {
+
+                    System.out.println("The number " + C + " is between the numbers " + A + " and " + B);
+
+                } else {
+
+                    System.out.println("The number " + C + " is not between the numbers " + A + " and " + B);
+
+                }
+
+            }
+            if (A == B) {
+
+                if (A == C) {
+
+                    System.out.println("All numbers are equal");
+
+                } else {
+
+                    System.out.println("The numbers A and B are equal and C is not between A and B");
+                }
+            }
+
+
+        }
+
+
+    }
+
+
+}
