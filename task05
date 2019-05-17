@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Homework01Task05 {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Please enter 3 different numbers:");
+
+        int A = sc.nextInt();
+
+        int B = sc.nextInt();
+
+        int C = sc.nextInt();
+
+        if (A > B && B > C)
+
+            System.out.println(A + ", " + B + ", " + C);
+
+        if (A > B && C > B)
+
+            System.out.println(A + ", " + C + ", " + B);
+
+        if (B > C && C > A)
+
+            System.out.println(B + ", " + C + ", " + A);
+
+        if (B > A && A > C)
+
+            System.out.println(B + ", " + A + ", " + C);
+
+        if (C > A && A > B)
+
+            System.out.println(C + ", " + A + ", " + B);
+
+        if (C > B && B > A)
+
+            System.out.println(A + ", " + C + ", " + B);
+
+    }
+}
