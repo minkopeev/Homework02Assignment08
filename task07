@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class Homework01Task07 {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Please enter time (from 1 to 24):");
+
+        int time = sc.nextInt();
+
+        System.out.println("How much money you got:");
+
+        double money = sc.nextDouble();
+
+        System.out.println("Are you healthy (true or false):");
+
+        boolean health = sc.nextBoolean();
+
+        if (health == false) {
+
+            System.out.println("You will stay at home!");
+
+            if (money > 5) {
+
+                System.out.println("Go to pharmacy and buy some medicine!");
+
+            } else {
+
+                System.out.println("Drink some tea");
+
+            }
+
+        } else {
+
+            if (money >= 5 && money < 50) {
+
+                if ((time > 4) && (time <= 21))
+
+                    System.out.println("Go to a cafe!");
+
+                else
+
+                    System.out.println("Go to a bar and buy some beers!");
+
+            } else {
+
+                if ((time > 4) && (time <= 21))
+
+                    System.out.println("Go to to work amd make some money!");
+
+                else
+
+                    System.out.println("Go to a bar and buy a bottle of vodka!");
+
+            }
+        }
+    }
+}
