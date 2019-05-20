@@ -8,46 +8,46 @@ public class Homework01Task01 {
 
         System.out.println("Please input A:");
 
-        double A = sc.nextDouble();
+        double a = sc.nextDouble();
 
         System.out.println("Please input B:");
 
-        double B = sc.nextDouble();
+        double b = sc.nextDouble();
 
-        System.out.println("Please input C:");
+        System.out.println("Please input c:");
 
-        double C = sc.nextDouble();
+        double c = sc.nextDouble();
 
-        if (A > B) {
+        if (a > b) {
 
-            if ((A > C) && (C > B)) {
+            if ((a > c) && (c > b)) {
 
-                System.out.println("The number " + C + " is between the numbers " + B + " and " + A);
+                System.out.println("The number " + c + " is between the numbers " + b + " and " + a);
 
             } else {
 
-                System.out.println("The number " + C + " is not between the numbers " + B + " and " + A);
+                System.out.println("The number " + c + " is not between the numbers " + b + " and " + a);
 
             }
 
         } else {
 
-            if (A < B) {
+            if (a < b) {
 
-                if ((B > C) && (C > A)) {
+                if ((b > c) && (c > a)) {
 
-                    System.out.println("The number " + C + " is between the numbers " + A + " and " + B);
+                    System.out.println("The number " + c + " is between the numbers " + a + " and " + b);
 
                 } else {
 
-                    System.out.println("The number " + C + " is not between the numbers " + A + " and " + B);
+                    System.out.println("The number " + C + " is not between the numbers " + a + " and " + b);
 
                 }
 
             }
-            if (A == B) {
+            if (a == b) {
 
-                if (A == C) {
+                if (a == c) {
 
                     System.out.println("All numbers are equal");
 
